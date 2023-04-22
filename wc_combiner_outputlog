@@ -1,0 +1,83 @@
+2022-02-18 11:25:09,683 INFO client.ConfiguredRMFailoverProxyProvider: Failing over to rm2
+2022-02-18 11:25:09,734 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-02-18 11:25:09,771 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /user/s1034535/.staging/job_1623272363921_4170
+2022-02-18 11:25:10,005 INFO input.FileInputFormat: Total input files to process : 10
+2022-02-18 11:25:10,236 INFO mapreduce.JobSubmitter: number of splits:10
+2022-02-18 11:25:10,432 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1623272363921_4170
+2022-02-18 11:25:10,434 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-02-18 11:25:10,631 INFO conf.Configuration: resource-types.xml not found
+2022-02-18 11:25:10,631 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-02-18 11:25:10,637 WARN mapred.YARNRunner: Configuration yarn.app.mapreduce.am.resource.memory-mb=4096Mi is overriding the yarn.app.mapreduce.am.resource.mb=1536 configuration
+2022-02-18 11:25:10,682 INFO impl.YarnClientImpl: Submitted application application_1623272363921_4170
+2022-02-18 11:25:10,713 INFO mapreduce.Job: The url to track the job: http://redbad01:8088/proxy/application_1623272363921_4170/
+2022-02-18 11:25:10,714 INFO mapreduce.Job: Running job: job_1623272363921_4170
+2022-02-18 11:25:14,941 INFO mapreduce.Job: Job job_1623272363921_4170 running in uber mode : false
+2022-02-18 11:25:14,945 INFO mapreduce.Job:  map 0% reduce 0%
+2022-02-18 11:25:18,047 INFO mapreduce.Job:  map 10% reduce 0%
+2022-02-18 11:25:19,068 INFO mapreduce.Job:  map 50% reduce 0%
+2022-02-18 11:25:21,118 INFO mapreduce.Job:  map 100% reduce 0%
+2022-02-18 11:25:23,155 INFO mapreduce.Job:  map 100% reduce 100%
+2022-02-18 11:25:23,203 INFO mapreduce.Job: Job job_1623272363921_4170 completed successfully
+2022-02-18 11:25:23,299 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=54711
+		FILE: Number of bytes written=2754833
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=53907
+		HDFS: Number of bytes written=26575
+		HDFS: Number of read operations=35
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=10
+		Launched reduce tasks=1
+		Data-local map tasks=8
+		Rack-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=17529
+		Total time spent by all reduces in occupied slots (ms)=1310
+		Total time spent by all map tasks (ms)=17529
+		Total time spent by all reduce tasks (ms)=1310
+		Total vcore-milliseconds taken by all map tasks=17529
+		Total vcore-milliseconds taken by all reduce tasks=1310
+		Total megabyte-milliseconds taken by all map tasks=17949696
+		Total megabyte-milliseconds taken by all reduce tasks=1341440
+	Map-Reduce Framework
+		Map input records=10
+		Map output records=9452
+		Map output bytes=90754
+		Map output materialized bytes=54765
+		Input split bytes=971
+		Combine input records=9452
+		Combine output records=4094
+		Reduce input groups=2663
+		Reduce shuffle bytes=54765
+		Reduce input records=4094
+		Reduce output records=2663
+		Spilled Records=8188
+		Shuffled Maps =10
+		Failed Shuffles=0
+		Merged Map outputs=10
+		GC time elapsed (ms)=1028
+		CPU time spent (ms)=5160
+		Physical memory (bytes) snapshot=4134981632
+		Virtual memory (bytes) snapshot=47129141248
+		Total committed heap usage (bytes)=6074925056
+		Peak Map Physical memory (bytes)=499417088
+		Peak Map Virtual memory (bytes)=4253470720
+		Peak Reduce Physical memory (bytes)=337588224
+		Peak Reduce Virtual memory (bytes)=4594434048
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52936
+	File Output Format Counters 
+		Bytes Written=26575
+
